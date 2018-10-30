@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practica 2: El cubo flotando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgg-gs-gWS">
+                                <rect key="frame" x="59" y="50" width="257" height="25"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verónica Santos Pulpón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybj-mc-5bW">
+                                <rect key="frame" x="78" y="204" width="219" height="25"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="IWEB 2018-2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajn-8s-z6i">
+                                <rect key="frame" x="120" y="83" width="135" height="67"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uUP-if-6kr">
+                                <rect key="frame" x="37" y="307" width="301" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Martín de Vidales Palomero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K1-9M-fZy">
+                                <rect key="frame" x="37" y="237" width="301" height="25"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uUP-if-6kr" firstAttribute="top" secondItem="6K1-9M-fZy" secondAttribute="bottom" constant="45" id="Aak-eM-WML"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uUP-if-6kr" secondAttribute="trailing" constant="37" id="GVG-Nm-tlv"/>
+                            <constraint firstItem="dgg-gs-gWS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="JTN-u3-1hG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uUP-if-6kr" secondAttribute="bottom" constant="104" id="S76-JT-hjN"/>
+                            <constraint firstItem="dgg-gs-gWS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gcG-AQ-lCb"/>
+                            <constraint firstItem="uUP-if-6kr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="iq9-RJ-l0h"/>
+                            <constraint firstItem="6K1-9M-fZy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jp1-M5-h5h"/>
+                            <constraint firstItem="6K1-9M-fZy" firstAttribute="top" secondItem="ybj-mc-5bW" secondAttribute="bottom" constant="8" id="kiS-Pt-ofJ"/>
+                            <constraint firstItem="ybj-mc-5bW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nCH-aj-dMl"/>
+                            <constraint firstItem="ybj-mc-5bW" firstAttribute="top" secondItem="Ajn-8s-z6i" secondAttribute="bottom" constant="54" id="nQv-2P-vXW"/>
+                            <constraint firstItem="Ajn-8s-z6i" firstAttribute="top" secondItem="dgg-gs-gWS" secondAttribute="bottom" constant="8" id="tfu-Z2-7oS"/>
+                            <constraint firstItem="Ajn-8s-z6i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v7C-BF-F4Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="256" height="256"/>
+    </resources>
+</document>

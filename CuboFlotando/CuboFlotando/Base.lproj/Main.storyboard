@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CuboFlotando" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sUl-wp-PfB">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practica 2: El cubo flotando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqe-Fn-Dp6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-gy-ued">
+                                        <rect key="frame" x="0.0" y="29.5" width="320" height="430.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SCt-bm-5rD">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="215.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="CVy-WF-7xW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywK-TE-bej">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="25"/>
+                                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yC-Oh-h4b">
+                                                                <rect key="frame" x="3" y="0.0" width="0.0" height="25"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="VWL-LH-eVe">
+                                                                <rect key="frame" x="4" y="0.0" width="318" height="26"/>
+                                                                <connections>
+                                                                    <action selector="updateSide:" destination="BYZ-38-t0r" eventType="valueChanged" id="CLa-uZ-yn7"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-v4-bBc">
+                                                        <rect key="frame" x="0.0" y="25" width="320" height="190.5"/>
+                                                        <subviews>
+                                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IOz-BU-rZI" customClass="FunctionView" customModule="CuboFlotando" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO7-c7-CeU">
+                                                                        <rect key="frame" x="8" y="0.0" width="27" height="14"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.61964691380895931" green="0.97404852749834114" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="resolution">
+                                                                        <real key="value" value="45"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="trayectoryColor">
+                                                                        <color key="value" red="0.0" green="0.43204674533115472" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Posición"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7R3-4r-nHt" customClass="FunctionView" customModule="CuboFlotando" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="63.5" width="320" height="63.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-kQ-E9F">
+                                                                        <rect key="frame" x="8" y="0.0" width="27" height="12"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.91540873087061558" blue="0.90634065859062685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="resolution">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="trayectoryColor">
+                                                                        <color key="value" red="1" green="0.0" blue="0.046545039428554702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Velocidad"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lPm-EG-Vsy" customClass="FunctionView" customModule="CuboFlotando" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="127" width="320" height="63.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9G-jX-QMv">
+                                                                        <rect key="frame" x="8" y="0.0" width="27" height="12"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.95960686909232351" blue="0.87694158048382387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="resolution">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="trayectoryColor">
+                                                                        <color key="value" red="1" green="0.58496098170107236" blue="0.0019352455799939161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Tiempo"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Aceleración"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wQ0-3m-7pi">
+                                                <rect key="frame" x="0.0" y="215.5" width="320" height="215"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="r1k-Yu-7ho">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="24.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7N-IN-wPE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="24.5"/>
+                                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXg-Qt-yG2">
+                                                                <rect key="frame" x="3" y="0.0" width="0.0" height="24.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Xe-3S-6ni">
+                                                                <rect key="frame" x="4" y="0.0" width="318" height="25.5"/>
+                                                                <connections>
+                                                                    <action selector="updateTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="4zi-rj-YxB"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VJI-mu-qP7" customClass="FunctionView" customModule="CuboFlotando" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="24.5" width="320" height="190.5"/>
+                                                        <color key="backgroundColor" red="0.80188382955312287" green="0.81621308250245483" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="trayectoryColor">
+                                                                <color key="value" red="0.94806968863907937" green="0.001935245579993583" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textX" value="Posición"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textY" value="Velocidad"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93697032899920485" blue="0.81281803256423357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="sUl-wp-PfB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7gG-GJ-WOX"/>
+                            <constraint firstItem="sUl-wp-PfB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fDA-8C-tGj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sUl-wp-PfB" secondAttribute="bottom" id="mpK-Jw-S9T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sUl-wp-PfB" secondAttribute="trailing" id="qIX-ZA-ReF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="E89-yT-cso" appends="YES" id="YaD-w1-jnP"/>
+                            <outletCollection property="gestureRecognizers" destination="yrd-Js-iJu" appends="YES" id="Yk0-jn-hp6"/>
+                            <outletCollection property="gestureRecognizers" destination="Oxr-ic-P5U" appends="YES" id="FZR-KK-hwp"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="accelerationTView" destination="lPm-EG-Vsy" id="KOK-oj-FyF"/>
+                        <outlet property="aceleracionEnT" destination="U9G-jX-QMv" id="M6I-rk-ydD"/>
+                        <outlet property="ladoEnMetros" destination="4yC-Oh-h4b" id="Mv7-zB-ylf"/>
+                        <outlet property="posicionEnT" destination="bO7-c7-CeU" id="NzT-zs-tdm"/>
+                        <outlet property="positionTView" destination="IOz-BU-rZI" id="KOj-fe-Juj"/>
+                        <outlet property="sideLabel" destination="ywK-TE-bej" id="jXV-FM-Nbd"/>
+                        <outlet property="sideSlider" destination="VWL-LH-eVe" id="puq-OR-HuI"/>
+                        <outlet property="speedPosView" destination="VJI-mu-qP7" id="pHy-kf-mlo"/>
+                        <outlet property="speedTView" destination="7R3-4r-nHt" id="FcI-TY-OVY"/>
+                        <outlet property="tiempoEnSegundos" destination="gXg-Qt-yG2" id="LLp-nX-Twh"/>
+                        <outlet property="timeLabel" destination="Q7N-IN-wPE" id="mhO-ox-TYV"/>
+                        <outlet property="timeSlider" destination="0Xe-3S-6ni" id="zLP-zk-pZh"/>
+                        <outlet property="velocidadEnT" destination="WlW-kQ-E9F" id="wrV-xl-yXY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="E89-yT-cso">
+                    <connections>
+                        <action selector="escaladoTocho:" destination="BYZ-38-t0r" id="U3g-fi-Tmz"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="yrd-Js-iJu">
+                    <connections>
+                        <action selector="escaladoFinoMayor:" destination="BYZ-38-t0r" id="TZo-25-4pm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Oxr-ic-P5U">
+                    <connections>
+                        <action selector="escaladoFinoMenor:" destination="BYZ-38-t0r" id="2ld-6N-d4L"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="135" y="110"/>
+        </scene>
+    </scenes>
+</document>

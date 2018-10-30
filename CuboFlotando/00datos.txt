@@ -1,0 +1,11 @@
+g819
+Luis Martín de Vidales Palomero
+Verónica Santos Pulpón
+
+Gestos:
+
+Pinch:
+El pellizco se utilizará para aumentar o reducir la escala de forma rápida.
+
+Swipe izquierda y derecha:
+Estos gestos serán empledos para aumentar o reducir la escala de forma precisa.
